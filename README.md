@@ -15,19 +15,14 @@ Before starting, ensure you have the following installed on your machine:
 
 Follow these step-by-step instructions to get the API running locally:
 
-### 1. Navigate to the API Directory
-From the root of the project, change your directory to the `api` folder:
-```bash
-cd full-stack-estate/api
-```
 
-### 2. Install Dependencies
+### 1. Install Dependencies
 Install all the required npm packages:
 ```bash
 npm install
 ```
 
-### 3. Configure Environment Variables
+### 2. Configure Environment Variables
 Create a file named `.env` in the root of the `api` folder:
 ```bash
 # On Linux/macOS:
@@ -53,7 +48,7 @@ CLIENT_URL="http://localhost:5173"
 > [!NOTE]
 > Make sure to replace `<username>`, `<password>`, and `cluster0.mongodb.net` in the `DATABASE_URL` with your actual MongoDB Atlas connection details.
 
-### 4. Database Setup & Prisma Client Generation
+### 3. Database Setup & Prisma Client Generation
 This project uses **Prisma ORM** to interact with MongoDB. You need to generate the Prisma client and sync the schema with your database.
 
 1. **Generate Prisma Client:**
@@ -67,7 +62,7 @@ This project uses **Prisma ORM** to interact with MongoDB. You need to generate 
    ```
    *This command creates the collections and index structures defined in [schema.prisma](file:///f:/EsayEstate2026/full-stack-estate/api/prisma/schema.prisma) in your MongoDB database.*
 
-### 5. Start the Server
+### 4. Start the Server
 Start the Express API server by running:
 ```bash
 node app.js
